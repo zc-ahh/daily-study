@@ -1,0 +1,93 @@
+/* pages/audio/audio.wxss */
+.video{
+  margin: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.swiper{
+  margin: 10rpx;
+  text-align:center;
+
+}
+.picker{
+  border: none;
+  background-color: rgba(224, 233, 231, 0.61);
+}
+.img{
+  height: 200rpx;
+}
+.top{
+  width: 90%;
+  height: 100%;
+  margin: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #666;
+  border-radius: 50rpx;
+  padding: 0 10rpx;
+}
+
+.t{
+  margin: 10rpx;
+  text-align: center;
+}
+audio{
+  width: 100%;
+}
+.bu{
+  height: 25px;
+}
+.input{
+  width: 70%;
+  height: 25px;
+}
+picker-view{
+  width: 100%;
+  height: 300rpx;
+}
+progress{
+  width: 85%;
+}
+.slider{
+  width: 95%;
+  margin-left: 4%;
+  margin-right: 0;
+}
+button{
+  background-color: palegreen;
+  height: 60rpx;
+}
+.con{
+  margin: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.con1{
+  margin: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sl{
+  margin: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hk{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.myAudio{
+  padding: 10rpx 0;
+  margin: 20rpx 0;
+}
+.image{
+  width: 50rpx;
+  height: 50rpx;
+}

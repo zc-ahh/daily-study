@@ -1,0 +1,15 @@
+<!--pages/login/login.wxml-->
+<view class="t">欢迎使用微云播放器</view>
+<view class="mes">{{message}}</view>
+<view class="con">
+<view class="t">请登录账号</view>
+<form bindsubmit="onSubmit" bindreset="onReset">
+<input name='sno' type="text" placeholder="请输入学号"/>
+<input name="password" password placeholder="请输入密码"/>
+<view class="but">
+<button size="mini" form-type="submit">提交</button>
+<button size="mini" form-type="reset">重置</button>
+</view>
+<navigator url="/pages/register/register">没有账号？点击注册</navigator>
+</form>
+</view>

@@ -1,0 +1,25 @@
+/* pages/change/change.wxss */
+.t{
+  text-align: center;
+}
+input{
+  margin: 15rpx;
+  border: 1rpx solid silver;
+  height: 60rpx;
+}
+button{
+  background-color: yellowgreen;
+}
+.con{
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.but{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

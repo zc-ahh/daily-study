@@ -1,0 +1,52 @@
+<!--pages/audio/audio.wxml-->
+<view class="video">
+<view class="top">
+<text style="font-size:17px">搜索：</text><input class="input" placeholder="请输入要查找的音乐"  bindblur="musicBlur" confirm-type="search"></input>
+<view class="bu" size="mini" type="default" bindtap="search" ><icon type="search" ></icon></view>
+</view>
+<view class="swiper">
+<swiper indicator-dots="true"  
+        autoplay="true" interval="2000" duration="1000" circular="true">  
+      <block wx:for="{{arr}}">  
+        <swiper-item>  
+            <image class="img" bindtap="play" src="{{item.src}}" data-name="{{item.name}}" />  
+        </swiper-item>  
+      </block>  
+</swiper> 
+</view>
+<view class="t">
+<audio id="myAudio" poster="{{poster}}" name="{{name}}" bindtimeupdate="currenttime"
+author="{{author}}" src="{{src}}" controls loop></audio>
+<slider class="bar" bindchange="sliderChange" bindchanging="sliderchanging" 
+ min="0" value="{{currentvalue}}" max="{{alltime}}" activeColor="#1aad19" block-size="12" block-color="#1aad19"></slider>
+ <view class="sl">
+   <view class="t">{{currentTime}}</view>
+   <view bindtap="audiopause"><image class="image" src="{{Src}}"></image></view>
+   <view class="t">{{duration}}</view>
+ </view>
+</view>
+<view class="con">
+  <picker-view indicator-class="picker" value="{{value}}" indicator-style="height:50px;" bindchange="pickerviewchange">
+    <picker-view-column>
+      <view class="t" wx:for="{{songallinfo}}">
+        <text class="left">歌曲名：{{item.name}}，</text>
+        <text class="right">作者：{{item.author}}</text>
+      </view>
+    </picker-view-column>
+  </picker-view>
+</view>
+<view class="hk">
+  <view hidden="false">{{songinfo}}</view>
+  <button  size="mini" bindtap="surechange" data-id="{{songinfo}}">确认播放</button>
+  <button  size="mini" bindtap="preserve" data-id="{{songinfo}}">收藏</button>
+</view>
+<view class="con1">
+  <view class="t">历史记录</view>
+  <picker mode="selector" range='{{historysong}}' range-key="{{'name'}}" indicator-style="height:50px;" bindchange="pickerchange1">
+    <image class="image" src="/pages/images/ranking.png"></image>
+  </picker>
+</view>
+</view>
+
+
+

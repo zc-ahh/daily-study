@@ -1,0 +1,23 @@
+/* pages/start/start.wxss */
+.con{
+  margin-top: 15%;
+  text-align: center;
+}
+.but{
+  margin: 30rpx;
+  text-align: center;
+}
+.t{
+  margin-top: 25rpx;
+  text-align: center;
+  font-size: 45rpx;
+  font-style: italic;
+}
+image{
+  width: 200rpx;
+  height: 200rpx;
+}
+button{
+  margin: 20rpx;
+  background-color: burlywood;
+}

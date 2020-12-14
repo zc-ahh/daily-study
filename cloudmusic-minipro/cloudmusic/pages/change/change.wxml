@@ -1,0 +1,17 @@
+<!--pages/register/register.wxml-->
+<view class="t">修改信息(学号不可修改)</view>
+<view class="con">
+  <view hidden="true">{{sno}}</view>
+  <form bindsubmit="onsubmit" bindreset="onReset">
+    <input name='name' type="text" placeholder="请输入姓名"/>
+    <input name='password' type="text" placeholder="请输入密码"/>
+    <input name='grade' type="text" placeholder="请输入年级"/>
+    <input name='major' type="text" placeholder="请输入专业"/>
+    <input name='class1' type="text" placeholder="请输入班级"/>
+    <input name='sex' type="text" placeholder="请输入性别"/>
+  <view class="but">
+  <button size="mini" form-type="submit">提交</button>
+  <button size="mini" form-type="reset">重置</button>
+  </view>
+</form>
+</view>

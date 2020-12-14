@@ -1,0 +1,38 @@
+<view class="t" style="color:blue">
+  <text class="left">个人信息</text><text style="text-align:right" bindtap="refresh">刷新(登陆后刷新)</text><text class="right" bindtap="login">{{state}}</text>
+</view>
+<view class="con">
+<view class="t">
+  <text class="left">姓名：</text><text class="right">{{info.name}}</text>
+</view>
+<view class="t">
+  <text class="left">学号：</text><text class="right">{{info.sno}}</text>
+</view>
+<view class="t">
+  <text class="left">年级：</text><text class="right">{{info.grade}}</text>
+</view>
+<view class="t">
+  <text class="left">专业：</text><text class="right">{{info.major}}</text>
+</view>
+<view class="t">
+  <text class="left">班级：</text><text class="right">{{info.class1}}</text>
+</view>
+<view class="t">
+  <text class="left">性别：</text><text class="right">{{info.sex}}</text>
+</view>
+<view class="con1">
+  <text class="left">收藏：</text>
+  <picker-view value="{{value}}" indicator-style="height:50px;" bindchange="pickerviewchange">
+    <picker-view-column>
+      <view class="info" wx:for="{{fancy}}">
+        <text >歌曲名：{{item.name}}，</text>
+        <text >作者：{{item.author}}</text>
+      </view>
+    </picker-view-column>
+  </picker-view>
+</view>
+<view class="t" bindtap="exit">
+  <text class="left">退出：</text><text class="right">>>>></text>
+</view>
+<button type="primary" bindtap="infochange">修改信息</button>
+</view>

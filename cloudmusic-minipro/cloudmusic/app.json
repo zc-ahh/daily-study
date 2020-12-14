@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/audio/audio",
+    "pages/change/change",
+    "pages/login/login",
+    "pages/person/person",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/register/register"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f00",
+    "navigationBarTitleText": "微云播放器",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/audio/audio",
+      "iconPath": "/pages/images/home-1.png",
+      "text": "首页",
+      "selectedIconPath": "/pages/images/home-2.png"
+    },
+    {
+      "pagePath": "pages/person/person",
+      "text": "个人",
+      "iconPath": "/pages/images/my.png",
+      "selectedIconPath": "/pages/images/my-1.png"
+    }
+  ]
+  }
+}

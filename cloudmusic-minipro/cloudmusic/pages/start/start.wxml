@@ -1,0 +1,9 @@
+<!--pages/start/start.wxml-->
+<view class="con" style="">
+  <image src="{{src}}" mode="widthFix"></image>
+</view>
+<view class="t">微云播放器</view>
+<view class="but">
+<button bindtap="wechatlogin">微信账号一键登录</button>
+<button bindtap="snologin">使用学号登录</button>
+</view>
